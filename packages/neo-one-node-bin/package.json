@@ -16,7 +16,7 @@
   "dependencies": {
     "@neo-one/logger": "^2.6.1",
     "@neo-one/node": "^3.0.0",
-    "@neo-one/node-neo-settings": "^3.0.0",
+    "@neo-one/node-neo-settings": "^3.0.1-preview3",
     "@neo-one/utils": "^3.0.0",
     "@neo-one/utils-node": "^2.6.2",
     "@types/yargs": "^13.0.3",
