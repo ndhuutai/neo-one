@@ -19,7 +19,7 @@
     "@babel/register": "^7.5.5",
     "@neo-one/cli-common": "^3.0.0",
     "@neo-one/cli-common-node": "^2.7.1",
-    "@neo-one/client": "^3.0.0",
+    "@neo-one/client": "^3.0.1-preview4",
     "@neo-one/client-common": "^3.0.0",
     "@neo-one/client-core": "^3.0.0",
     "@neo-one/client-full": "^2.7.1",
