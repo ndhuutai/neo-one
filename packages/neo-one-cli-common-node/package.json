@@ -13,7 +13,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@neo-one/cli-common": "^3.0.0",
+    "@neo-one/cli-common": "^3.0.1-preview4",
     "@neo-one/client-core": "^3.0.0",
     "@neo-one/client-full-core": "^3.0.0",
     "@types/lodash": "^4.14.138",
