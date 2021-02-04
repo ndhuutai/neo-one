@@ -16,7 +16,7 @@
     "@neo-one/cli-common": "^3.0.0",
     "@neo-one/client-common": "^3.0.0",
     "@neo-one/client-core": "^3.0.0",
-    "@neo-one/client-full-core": "^3.0.0",
+    "@neo-one/client-full-core": "^3.0.1-preview4",
     "@neo-one/logger": "^2.6.1",
     "@neo-one/smart-contract-compiler": "^3.0.0",
     "@neo-one/utils": "^3.0.0",

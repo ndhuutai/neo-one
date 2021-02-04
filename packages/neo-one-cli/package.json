@@ -23,7 +23,7 @@
     "@neo-one/client-common": "^3.0.0",
     "@neo-one/client-core": "^3.0.0",
     "@neo-one/client-full": "^2.7.1",
-    "@neo-one/client-full-core": "^3.0.0",
+    "@neo-one/client-full-core": "^3.0.1-preview4",
     "@neo-one/client-switch": "^3.0.0",
     "@neo-one/logger": "^2.6.1",
     "@neo-one/logger-config": "^2.6.1",
