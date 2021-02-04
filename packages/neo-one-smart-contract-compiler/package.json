@@ -16,7 +16,7 @@
     "@babel/code-frame": "^7.0.0",
     "@neo-one/client-common": "^3.0.0",
     "@neo-one/client-core": "^3.0.0",
-    "@neo-one/client-full-common": "^3.0.0",
+    "@neo-one/client-full-common": "^3.0.1-preview4",
     "@neo-one/client-full-core": "^3.0.0",
     "@neo-one/smart-contract": "^2.7.0",
     "@neo-one/ts-utils": "^2.6.1",
