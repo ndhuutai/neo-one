@@ -18,8 +18,8 @@
     "@neo-one/node-storage-common": "^3.0.0",
     "@neo-one/utils": "^3.0.0",
     "@types/lru-cache": "^5.1.0",
-    "lru-cache": "^5.0.0",
-    "tslib": "^1.10.0"
+    "lru-cache": "^6.0.0",
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@neo-one/build-tools": "^1.0.0",
