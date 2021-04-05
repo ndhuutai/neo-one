@@ -42,6 +42,10 @@ export const createPriv = ({
     addressVersion: clientCommon.NEO_ADDRESS_VERSION,
     privateKeyVersion: clientCommon.NEO_PRIVATE_KEY_VERSION,
     standbyValidators,
-    nativeActivations: commonSettings.nativeActivations,
+    maxBlockSize: commonSettings.maxBlockSize,
+    maxBlockSystemFee: commonSettings.maxBlockSystemFee,
+    nativeUpdateHistory: commonSettings.nativeUpdateHistory,
+    maxTransactionsPerBlock: commonSettings.maxTransactionsPerBlock,
+    maxTraceableBlocks: commonSettings.maxTraceableBlocks,
   };
 };

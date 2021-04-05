@@ -27,6 +27,7 @@ import {
   utils as clientUtils,
   Wildcard,
   WitnessScopeModel,
+  CallFlags,
 } from '@neo-one/client-common';
 import {
   convertParams,
@@ -226,6 +227,7 @@ export class LocalUserAccountProvider<TKeyStore extends KeyStore, TProvider exte
           sb.emitDynamicAppCall(
             hash,
             'deploy',
+            CallFlags.All,
             ...convertParams({
               parameters: deployFunc.parameters === undefined ? [] : deployFunc.parameters,
               params,

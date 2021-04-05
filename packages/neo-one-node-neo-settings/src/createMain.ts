@@ -2,7 +2,7 @@ import { common as clientCommon, crypto } from '@neo-one/client-common';
 import { Settings } from '@neo-one/node-core';
 import { common } from './common';
 
-const mainNetMessageMagic = 5195086;
+const mainNetMessageMagic = 827601742;
 
 const DEFAULT_VALIDATORS: readonly string[] = [
   '03b209fd4f53a7170ea4444e0cb0a6bb6a53c2bd016926989cf85f9b0fba17a70c',
@@ -68,6 +68,10 @@ export const createMain = ({
     addressVersion: clientCommon.NEO_ADDRESS_VERSION,
     privateKeyVersion: clientCommon.NEO_PRIVATE_KEY_VERSION,
     standbyValidators,
-    nativeActivations: commonSettings.nativeActivations,
+    maxBlockSize: commonSettings.maxBlockSize,
+    maxBlockSystemFee: commonSettings.maxBlockSystemFee,
+    nativeUpdateHistory: commonSettings.nativeUpdateHistory,
+    maxTransactionsPerBlock: commonSettings.maxTransactionsPerBlock,
+    maxTraceableBlocks: commonSettings.maxTraceableBlocks,
   };
 };
