@@ -1,4 +1,4 @@
-import { common } from '@neo-one/client-common';
+import { CallFlags, common } from '@neo-one/client-common';
 import ts from 'typescript';
 import { GlobalProperty } from '../../constants';
 import { ScriptBuilder } from '../../sb';
@@ -37,9 +37,11 @@ export class IsCallerHelper extends Helper {
           sb.emitPushInt(node, 1);
           // [[addressBuffer], addressBuffer]
           sb.emitOp(node, 'PACK');
-          // ['getcontract', [addressBuffer], addressBuffer]
+          // [number, [addressBuffer], addressBuffer]
+          sb.emitPushInt(node, CallFlags.None);
+          // ['getcontract', number, [addressBuffer], addressBuffer]
           sb.emitPushString(node, 'getcontract');
-          // [buffer, 'getcontract', [addressBuffer], addressBuffer]
+          // [buffer, 'getcontract', number, [addressBuffer], addressBuffer]
           sb.emitPushBuffer(node, common.nativeHashes.ContractManagement);
           // [maybeContract, addressBuffer]
           sb.emitSysCall(node, 'System.Contract.Call');

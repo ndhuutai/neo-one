@@ -1,4 +1,4 @@
-import { common } from '@neo-one/client-common';
+import { CallFlags, common } from '@neo-one/client-common';
 import { GlobalProperty, Types } from '../../constants';
 import { ScriptBuilder } from '../../sb';
 import { VisitOptions } from '../../types';
@@ -26,9 +26,11 @@ class BlockchainCurrentCallerContract extends BuiltinMemberValue {
       sb.emitPushInt(node, 1);
       // [[buffer], buffer]
       sb.emitOp(node, 'PACK');
-      // ['getcontract', [buffer], buffer]
+      // [number, [buffer], buffer]
+      sb.emitPushInt(node, CallFlags.None);
+      // ['getcontract', number, [buffer], buffer]
       sb.emitPushString(node, 'getcontract');
-      // [buffer, 'getcontract', [buffer], buffer]
+      // [buffer, 'getcontract', number, [buffer], buffer]
       sb.emitPushBuffer(node, common.nativeHashes.ContractManagement);
       // [conract, buffer]
       sb.emitSysCall(node, 'System.Contract.Call');
